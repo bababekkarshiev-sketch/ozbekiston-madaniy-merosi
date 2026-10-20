@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madaniyat — O‘zbekiston merosi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f7ff;
+      color: #17385f;
+    }
+
+    header {
+      background: #0757a6;
+      color: white;
+      text-align: center;
+      padding: 22px 10px;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 14px 5px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #0757a6;
+      text-decoration: none;
+      margin: 7px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 30px 18px;
+      text-align: center;
+      background: #dceeff;
+    }
+
+    .card {
+      background: white;
+      margin: 18px 12px;
+      padding: 18px;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px #00000012;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h2 {
+      color: #0757a6;
+    }
+
+    .details {
+      display: none;
+      line-height: 1.7;
+    }
+
+    button {
+      background: #0757a6;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 9px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #06356b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🇺🇿 Madaniyat</h1>
+  <p>O‘zbekistonning boy tarixiy merosi</p>
+</header>
+
+<nav>
+  <a href="#tarix">Tarix</a>
+  <a href="#joylar">Qadimiy joylar</a>
+  <a href="#hunarmand">Hunarmandchilik</a>
+</nav>
+
+<div class="hero">
+  <h2>Ajdodlar merosini kashf eting!</h2>
+  <p>Tarixiy shaharlar, milliy an’analar
+  va hunarmandchilik bilan tanishing.</p>
+</div>
+
+<main id="joylar">
+
+  <article class="card" id="tarix">
+    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80"
+         alt="Samarqand tarixiy me’morchiligi">
+
+    <h2>Samarqand</h2>
+    <p>Buyuk Ipak yo‘lining qadimiy shahri.</p>
+
+    <div class="details">
+      <p>Samarqand ko‘p asrlik tarixi, Registon
+      maydoni, Shohi Zinda va Go‘ri Amir
+      maqbarasi bilan mashhur. Shahar ilm-fan,
+      savdo va me’morchilik rivojida muhim
+      o‘rin tutgan.</p>
+    </div>
+
+    <button onclick="toggleInfo(this)">
+      Ma’lumotni ko‘rish
+    </button>
+  </article>
+
+  <article class="card">
+    <img src="https://images.unsplash.com/photo-1625401586065-6a0b6f3f6f6a?auto=format&fit=crop&w=900&q=80"
+         alt="Buxoro tarixiy shahri">
+
+    <h2>Buxoro</h2>
+    <p>Qadimiy madrasalar va tarixiy obidalar shahri.</p>
+
+    <div class="details">
+      <p>Buxoro Ark qal’asi, Poi Kalon majmuasi
+      va Ismoil Somoniy maqbarasi bilan
+      tanilgan. Bu yerda zardo‘zlik va boshqa
+      hunarmandchilik turlari rivojlangan.</p>
+    </div>
+
+    <button onclick="toggleInfo(this)">
+      Ma’lumotni ko‘rish
+    </button>
+  </article>
+
+  <article class="card">
+    <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80"
+         alt="An’anaviy kulolchilik buyumlari">
+
+    <h2 id="hunarmand">Milliy hunarmandchilik</h2>
+    <p>Kulolchilik, atlas-adras, kashtachilik
+    va yog‘och o‘ymakorligi.</p>
+
+    <div class="details">
+      <p>Rishton o‘zining rangli kulolchilik
+      buyumlari bilan mashhur. Marg‘ilonda
+      atlas va adras matolari to‘qiladi.
+      Buxoro zardo‘zligi, milliy kashtachilik
+      va yog‘och o‘ymakorligi ham muhim
+      madaniy meros hisoblanadi.</p>
+    </div>
+
+    <button onclick="toggleInfo(this)">
+      Ma’lumotni ko‘rish
+    </button>
+  </article>
+
+  <article class="card">
+    <h2>Xiva</h2>
+    <p>Ichan qal’a va Kalta Minor bilan mashhur.</p>
+    <div class="details">
+      <p>Xiva Xorazm vohasidagi qadimiy shahar.
+      Ichan qal’a tarixiy markaz bo‘lib,
+      unda ko‘plab madrasalar va me’moriy
+      yodgorliklar saqlangan.</p>
+    </div>
+    <button onclick="toggleInfo(this)">
+      Ma’lumotni ko‘rish
+    </button>
+  </article>
+
+</main><nav>
+  <a href="#tarix">Tarix</a>
+  <a href="#joylar">Qadimiy joylar</a>
+  <a href="#hunarmand">Hunarmandchilik</a>
+  <a href="#kulolchilik">Kulolchilik</a>
+  <a href="#raqs">Milliy raqs</a>
+</nav>
+<!-- QADIMIY JOYLAR -->
+<h2 class="section-title">🏛️ Qadimiy joylar</h2>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=900&q=80"
+    alt="Samarqand tarixiy obidalari">
+
+  <h2>Registon maydoni</h2>
+  <p>Samarqandning eng mashhur tarixiy maskanlaridan biri.</p>
+
+  <div class="details">
+    <p>
+      Registon Ulug‘bek, Sherdor va Tillakori
+      madrasalaridan tashkil topgan. Uning
+      moviy koshinlari, naqshlari va ulkan
+      peshtoqlari sayyohlarni hayratga soladi.
+      Registon qadimda ilm-fan va shahar
+      hayotining muhim markazi bo‘lgan.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=900&q=80"
+    alt="Tarixiy me’morchilik">
+
+  <h2>Shohi Zinda majmuasi</h2>
+  <p>Samarqanddagi betakror tarixiy me’moriy majmua.</p>
+
+  <div class="details">
+    <p>
+      Shohi Zinda ko‘plab maqbaralardan iborat.
+      Uning binolari rang-barang koshinlar va
+      nafis naqshlar bilan bezatilgan. Majmua
+      Samarqandning muhim tarixiy va madaniy
+      yodgorliklaridan biri hisoblanadi.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=900&q=80"
+    alt="Tarixiy masjid me’morchiligi">
+
+  <h2>Bibixonim masjidi</h2>
+  <p>Samarqandning ulug‘vor tarixiy yodgorligi.</p>
+
+  <div class="details">
+    <p>
+      Bibixonim masjidi Amir Temur davrida
+      bunyod etilgan. U katta peshtoqlari,
+      gumbazlari va bezaklari bilan mashhur.
+      Masjid o‘zbek me’morchiligi tarixida
+      muhim o‘rin egallaydi.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=900&q=80"
+    alt="Qadimiy me’moriy obida">
+
+  <h2>Buxoro Ark qal’asi</h2>
+  <p>Buxoroning qadimiy qal’asi va tarixiy ramzi.</p>
+
+  <div class="details">
+    <p>
+      Ark qal’asi Buxoro hukmdorlarining qarorgohi
+      bo‘lgan. Uning hududida turli davrlarda
+      davlat boshqaruvi, yashash va boshqa
+      faoliyatlar amalga oshirilgan. Bugungi
+      kunda u shaharning muhim tarixiy
+      yodgorliklaridan biridir.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+
+<!-- HUNARMANDCHILIK -->
+<h2 class="section-title" id="hunarmand">
+  🧵 Milliy hunarmandchilik
+</h2>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=900&q=80"
+    alt="Milliy naqsh va matolar">
+
+  <h2>Atlas va adras</h2>
+  <p>O‘zbek milliy matolari va rang-barang naqshlar.</p>
+
+  <div class="details">
+    <p>
+      Atlas va adras o‘zbek xalqining an’anaviy
+      matolaridir. Ular ranglari va o‘ziga xos
+      naqshlari bilan ajralib turadi. Marg‘ilon
+      shahri atlas va adras ishlab chiqarish
+      an’analari bilan mashhur. Bu matolar
+      milliy kiyimlar tikishda ishlatiladi.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=80"
+    alt="An’anaviy naqsh va bezaklar">
+
+  <h2>Kashtachilik va zardo‘zlik</h2>
+  <p>Ip, mato va zar yordamida yaratiladigan san’at.</p>
+
+  <div class="details">
+    <p>
+      Kashtachilikda matoga rangli iplar bilan
+      naqshlar tikiladi. Zardo‘zlikda esa zar
+      iplar yordamida kiyim va buyumlar
+      bezatiladi. Buxoro zardo‘zlik an’analari
+      bilan alohida tanilgan. Ushbu hunarlar
+      avloddan avlodga o‘tib kelmoqda.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+
+<!-- KULOLCHILIK -->
+<h2 class="section-title" id="kulolchilik">
+  🏺 Kulolchilik san’ati
+</h2>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80"
+    alt="Kulolchilik buyumlari">
+
+  <h2>Rishton kulolchilik maktabi</h2>
+  <p>Farg‘ona vodiysining mashhur hunarmandchilik turi.</p>
+
+  <div class="details">
+    <p>
+      Rishton o‘zining rangli va chiroyli
+      kulolchilik buyumlari bilan mashhur.
+      Ustalarning qo‘lida oddiy loydan kosa,
+      lagan, ko‘za va boshqa buyumlar yaratiladi.
+      Ular buyumlarni an’anaviy naqshlar bilan
+      bezab, maxsus pechlarda pishiradilar.
+      Rishton kulolchilik san’ati ko‘p asrlik
+      an’analarga ega.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?auto=format&fit=crop&w=900&q=80"
+    alt="Qo‘lda yasalgan buyumlar">
+
+  <h2>Loydan buyum yasash</h2>
+  <p>Kulolning qo‘li bilan yaratiladigan nafis buyumlar.</p>
+
+  <div class="details">
+    <p>
+      Kulol avval loyga kerakli shaklni beradi.
+      So‘ng buyum quritiladi, naqshlar bilan
+      bezatiladi va pechda pishiriladi.
+      Kulolchilik sabr, mahorat va ijodkorlikni
+      talab qiladi. Bu hunar xalqimizning
+      qadimiy amaliy san’at turlaridan biridir.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+
+<!-- MILLIY RAQS -->
+<h2 class="section-title" id="raqs">
+  💃 O‘zbek milliy raqslari
+</h2>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=900&q=80"
+    alt="Sahna va raqs san’ati">
+
+  <h2>Xorazm Lazgisi</h2>
+  <p>Jo‘shqin harakatlarga boy mashhur o‘zbek raqsi.</p>
+
+  <div class="details">
+    <p>
+      Lazgi Xorazm xalqining mashhur raqs
+      an’analaridan biridir. Unda qo‘l, yelka
+      va tana harakatlari musiqa bilan uyg‘unlashadi.
+      Lazgi quvonch, jo‘shqinlik va xalqning
+      madaniy ruhini ifodalaydi. Xorazm Lazgisi
+      UNESCOning nomoddiy madaniy merosi
+      ro‘yxatiga kiritilgan.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=900&q=80"
+    alt="Milliy sahna san’ati">
+
+  <h2>Andijon polkasi</h2>
+  <p>Quvnoq musiqa va chaqqon harakatlar bilan tanilgan.</p>
+
+  <div class="details">
+    <p>
+      Andijon polkasi o‘zbek xalqining taniqli
+      musiqiy va raqs an’analaridan biridir.
+      Uning ohangi sho‘x va harakatchan bo‘lib,
+      ijrochilardan chaqqonlik talab qiladi.
+      Ushbu raqs xalq bayramlari va madaniy
+      tadbirlarda ijro etiladi.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+<article class="card">
+  <img
+    src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=900&q=80"
+    alt="Musiqa va sahna chiqishi">
+
+  <h2>Buxoro raqs an’analari</h2>
+  <p>Nafis harakatlar va milliy musiqa uyg‘unligi.</p>
+
+  <div class="details">
+    <p>
+      Buxoro raqs san’ati o‘zining nazokatli
+      harakatlari va ifodali ijrosi bilan ajralib
+      turadi. Milliy liboslar, musiqa va qo‘l
+      harakatlari raqsning muhim qismlaridir.
+      Bu an’analar xalqimizning tarixiy
+      xotirasi va madaniyatini aks ettiradi.
+    </p>
+  </div>
+  <button onclick="toggleInfo(this)">Ma’lumotni ko‘rish</button>
+</article>
+
+<script>
+  function toggleInfo(button) {
+    const details = button.previousElementSibling;
+
+    if (!details) return;
+
+    const isOpen = details.classList.toggle("show");
+
+    button.textContent = isOpen
+      ? "Ma’lumotni yashirish"
+      : "Ma’lumotni ko‘rish";
+  }
+</script>
+</body>
+</html>
