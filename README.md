@@ -1,0 +1,2 @@
+# ozbekiston-madaniy-merosi
+Madaniyat
